@@ -51,16 +51,17 @@ const CartItem = ({ item, qty, id }: Props) => {
           <div className="flex justify-between items-center ">
             <button
               className="bg-[#E7E7E8] h-[28px] w-[28px] rounded-full flex justify-center items-center hover:brightness-90"
-              onClick={() => increaseQty(id)}
-            >
-              <img src="./plus.png" className="h-[18px] w-[18px]" />
-            </button>
-            <span className="text-[14px] mx-[8px]">{qty}</span>
-            <button
-              className="bg-[#E7E7E8] h-[28px] w-[28px] rounded-full flex justify-center items-center hover:brightness-90"
               onClick={decreaseQtyProduct}
             >
               <img src="./minus.png" className="h-[18px] w-[18px]" />
+            </button>
+
+            <span className="text-[14px] mx-[8px]">{qty}</span>
+            <button
+              className="bg-[#E7E7E8] h-[28px] w-[28px] rounded-full flex justify-center items-center hover:brightness-90"
+              onClick={() => increaseQty(id)}
+            >
+              <img src="./plus.png" className="h-[18px] w-[18px]" />
             </button>
           </div>
           <button
